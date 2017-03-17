@@ -1,5 +1,11 @@
 # Socket.io Demo
 
+Install dependencies:
+
+```
+$ yarn
+```
+
 compile Javascript:
 
 ```
