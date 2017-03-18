@@ -1,4 +1,4 @@
-const SocketIO = require('./socketio')
+const Room = require('./room')
 
 class App {
 
@@ -21,7 +21,7 @@ class App {
             if (input.value && input.value.length > 0) {
                 button.remove()
                 input.remove()
-                new SocketIO('/')
+                new Room('/')
             } else {
                 alert('Input can not be blank!')
             }

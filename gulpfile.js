@@ -6,7 +6,7 @@ const source = require('vinyl-source-stream')
 const sourcemaps = require('gulp-sourcemaps')
 
 gulp.task('script', function () {
-    return browserify('./app/frontend/index.js', { debug: true })
+    return browserify('./app/frontend/scripts/index.js', { debug: true })
             .transform("babelify", { presets: ["es2015"], sourceMaps: true })
             .bundle()
             .on('error', function onBundleError(err) {
@@ -21,5 +21,5 @@ gulp.task('script', function () {
 })
 
 gulp.task('watch', ['script'], function () {
-    return gulp.watch('./app/scripts/**/*.js', ['script'])
+    return gulp.watch('./app/frontend/scripts/**/*.js', ['script'])
 })

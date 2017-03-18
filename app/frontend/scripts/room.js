@@ -1,4 +1,5 @@
-class SocketIO {
+class Room {
+
     constructor(url) {
         this.socket = io(url)
         this.socket.on('connect', this.onConnect.bind(this))
@@ -17,6 +18,7 @@ class SocketIO {
     onDisconnect() {
         console.log('disconnect')
     }
+
 }
 
-module.exports = SocketIO
+module.exports = Room

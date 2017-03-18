@@ -5,7 +5,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var SocketIO = require('./socketio');
+var Room = require('./room');
 
 var App = function () {
     function App() {
@@ -31,7 +31,7 @@ var App = function () {
                 if (input.value && input.value.length > 0) {
                     button.remove();
                     input.remove();
-                    new SocketIO('/');
+                    new Room('/');
                 } else {
                     alert('Input can not be blank!');
                 }
