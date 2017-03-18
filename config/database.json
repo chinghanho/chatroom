@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "chh",
+    "password": null,
+    "database": "chatroom_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "chh",
+    "password": null,
+    "database": "chatroom_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "chatroom_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
