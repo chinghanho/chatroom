@@ -1,0 +1,21 @@
+.btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: pixel-to-vw(15px);
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-default {
+  padding: 8px 16px;
+  background-color: hsla(0, 0%, 92%, 1);
+  color: hsla(0, 0%, 24%, 1);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}

@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <title>ES6/7 Sandbox</title>
+  <title>Chat Room</title>
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Montserrat:400,700|Lato:300,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<div id="app"></div>
+<div id="app">
+  <div id="panel" class="control-panel">
+    <form id="join-form">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam numquam sint iusto ea aut amet, adipisci perspiciatis a soluta voluptate, cum dolor expedita nesciunt, ipsum tenetur alias architecto commodi eos.
+      </p>
+      <div class="form-group">
+        <input id="input-username" type="text" name="username" class="form-control" tabindex="1" placeholder="Username">
+      </div>
+      <div class="form-group">
+        <button id="btn-join" class="btn btn-default btn-block">Join</button>
+      </div>
+    </form>
+  </div>
+</div>
 
 <script src="/socket.io/socket.io.js"></script>
+<script src="./scripts/vendor.js"></script>
 <script src="./scripts/bundle.js"></script>
 
 </body>

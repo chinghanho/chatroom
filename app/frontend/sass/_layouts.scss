@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  line-height: 1;
+}
+
+body {
+  font-size: (15/1440) * 100 + vw;
+  font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Heiti TC', 'LiHei Pro', 'Microsoft JhengHei', 'Microsoft YaHei', 'Arial', sans-serif;
+  background-color: hsla(0, 0%, 8%, 1);
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: pixel-to-vw(15px);
+  line-height: 1.4;
+}
+
+.control-panel {
+  float: left;
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(0, 0%, 100%, 1);
+  transition: transform ease-in-out 600ms;
+  &.exit {
+    transform: translateX(-40vw);
+  }
+  &.enter {
+    width: 15vw;
+    transform: translateX(0);
+  }
+}

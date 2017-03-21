@@ -1,0 +1,17 @@
+.form-group:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border: none;
+  font-size: pixel-to-vw(15px);
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  background-color: transparent;
+  padding: 8px 16px;
+  border: 1px solid hsla(0, 0%, 92%, 1);
+  width: 100%;
+  max-width: 100%;
+}

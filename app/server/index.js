@@ -11,8 +11,13 @@ var io = socketIO(server)
 app.use(express.static(path.join(__dirname, '..', '..', 'public')))
 app.use('/', route)
 
-io.on('connection', function () {
+io.on('connection', client => {
     console.log('a user connected')
+
+    client.on('chat message', msg => {
+        console.log(msg)
+        io.emit('chat message', msg)
+    })
 })
 
 server.listen(3000)
